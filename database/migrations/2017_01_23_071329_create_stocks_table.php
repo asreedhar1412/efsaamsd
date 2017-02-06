@@ -19,6 +19,7 @@ class CreateStocksTable extends Migration
             $table->integer('shares');
             $table->float('purchase_price');
             $table->date('purchased');
+            $table->integer('original_value');
             $table->integer('customer_id')->unsigned();
             $table->timestamps();
         });
